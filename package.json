@@ -50,6 +50,11 @@
     "vaul": "^1.1.2",
     "zod": "^3.25.36"
   },
+  "overrides": {
+  "react-day-picker": {
+    "date-fns": "^3.6.0"
+  }
+  },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
     "@types/node": "^22.15.18",
