@@ -2,7 +2,7 @@
 
 import { fetchWithAuthRetry } from "./fetchWithAuthRetry.js";
 
-const BASE_URL = 'http://localhost:8080/portfolio';
+const BASE_URL = 'https://api-gateway-7hr4.onrender.com/portfolio';
 
 export interface PortfolioOverview {
   currentValue: number;
