@@ -1,8 +1,6 @@
-// Vertiq Portfolio Service API client
-// Generated for dashboard summary and sector breakdown
+
 
 import { fetchWithAuthRetry } from "./fetchWithAuthRetry.js";
-import { refreshToken } from "./auth.api";
 
 const BASE_URL = 'http://localhost:8080/portfolio';
 

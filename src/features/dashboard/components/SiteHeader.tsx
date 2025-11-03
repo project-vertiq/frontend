@@ -2,7 +2,6 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
 import { Bell } from "lucide-react";
 import { NavUser } from "@/components/nav-user";
-import { Link } from "react-router-dom";
 
 const user = {
   name: "Your Name",

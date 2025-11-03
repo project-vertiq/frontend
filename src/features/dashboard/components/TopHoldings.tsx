@@ -1,7 +1,6 @@
 "use client";
 
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Avatar } from "@/components/ui/avatar";
 import { BarChart3 } from "lucide-react";
 import type { Holding } from "@/services/portfolio.api";
 import { Skeleton } from "@/components/ui/skeleton";

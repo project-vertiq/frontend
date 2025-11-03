@@ -32,11 +32,11 @@ export function PortfolioMetrics({ metrics, error, loading }: PortfolioMetricsPr
     ],
     [
       { label: "P/E", value: displayValue(metrics?.avgPE) },
-      { label: "Industry P/E", value: displayValue(metrics?.industryPE ?? metrics?.industryPe) },
+      { label: "Industry P/E", value: displayValue(metrics?.industryPE) },
     ],
     [
       { label: "P/B", value: displayValue(metrics?.priceBook) },
-      { label: "Industry P/B", value: displayValue(metrics?.industryPB ?? metrics?.industryPb) },
+      { label: "Industry P/B", value: displayValue(metrics?.industryPB) },
     ],
     [
       { label: "Div Yield", value: displayValue(metrics?.divYield) },

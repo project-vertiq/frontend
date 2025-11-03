@@ -4,7 +4,6 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { BarChart3, AlertTriangle } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
-import type { MarketCapData } from "@/services/portfolio.api";
 
 const COLORS = [
 	"var(--chart-1)", // largecap

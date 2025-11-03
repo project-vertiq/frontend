@@ -1,4 +1,3 @@
-// BrokerCard component for brokers feature
 import React from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -62,6 +61,15 @@ const BrokerCard: React.FC<BrokerCardProps> = ({ broker, onConnect, onRefresh, o
       </div>
     );
   }
+
+  if (!broker) {
+    return (
+      <div className="bg-card flex flex-col gap-0 rounded-xl border py-4 shadow-sm w-full h-[180px] justify-center items-center">
+        <span className="text-muted-foreground">No broker data available</span>
+      </div>
+    );
+  }
+
   // Derive status from broker.status (set in API layer based on isConnected)
   const status = broker.status === 'connected' ? 'connected' : 'not_connected';
   return (

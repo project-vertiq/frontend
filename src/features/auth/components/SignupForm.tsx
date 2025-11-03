@@ -33,7 +33,7 @@ const SignupSchema = z.object({
   date_of_birth: z.date({ required_error: "Date of birth is required" }).nullable(),
 });
 
-export default function SignupForm({ loading: externalLoading }: { loading?: boolean } = {}) {
+export default function SignupForm() {
   const form = useForm<SignupFormValues>({
     resolver: zodResolver(SignupSchema),
     defaultValues: {

@@ -1,4 +1,3 @@
-import React from "react";
 
 const tabs = [
   { label: "Overview", value: "overview", disabled: false },

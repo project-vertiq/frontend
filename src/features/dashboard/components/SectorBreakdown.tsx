@@ -3,7 +3,6 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { BarChart3, AlertTriangle } from "lucide-react";
 import { Tooltip, TooltipTrigger, TooltipContent } from "@/components/ui/tooltip";
-import type { SectorData } from "@/services/portfolio.api";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const SECTOR_COLORS = [
@@ -14,6 +13,15 @@ const SECTOR_COLORS = [
 	"var(--chart-5)",
 	"#d946ef",
 ];
+
+interface Sector {
+  name: string;
+  value: number;
+}
+
+interface Portfolio {
+  sectors: Sector[];
+}
 
 interface SectorBreakdownProps {
 	sectorData?: any;
@@ -62,8 +70,9 @@ export function SectorBreakdown({ sectorData, error, loading }: SectorBreakdownP
 	}
 
 	// Flatten all sectors from all portfolios
-	const allSectors = sectorData.flatMap((p) => p.sectors);
-	const total = allSectors.reduce((sum, d) => sum + d.value, 0);
+    const allSectors = sectorData.flatMap((p: Portfolio) => p.sectors);
+    const total = allSectors.reduce((sum: number, d: Sector) => sum + d.value, 0);
+
 
 	// Sort by value descending
 	const sorted = [...allSectors].sort((a, b) => b.value - a.value);

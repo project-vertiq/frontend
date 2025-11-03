@@ -6,14 +6,11 @@ import { ArrowDownUp } from "lucide-react";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import {
   ChartContainer,
-  ChartTooltip,
   ChartTooltipContent,
   ChartLegendContent,
 } from "@/components/ui/chart";

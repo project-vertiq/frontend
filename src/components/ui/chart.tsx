@@ -2,7 +2,7 @@ import * as React from "react";
 
 export type ChartConfig = Record<string, { label: string; color?: string }>;
 
-export function ChartContainer({ config, className, children }: { config: ChartConfig; className?: string; children: React.ReactNode }) {
+export function ChartContainer({ className, children }: { config: ChartConfig; className?: string; children: React.ReactNode }) {
   // For now, just a styled div wrapper
   return <div className={className}>{children}</div>;
 }

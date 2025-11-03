@@ -14,6 +14,7 @@ interface AuthContextType {
   signup: (data: any) => Promise<void>;
   logout: () => Promise<void>;
   setAccessToken: (token: string | null) => void;
+  setUser: (user: User | null) => void;
   loginWithGoogle: (idToken: string) => Promise<void>;
 }
 
@@ -134,6 +135,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         signup: signupHandler,
         logout: logoutHandler,
         setAccessToken,
+        setUser,
         loginWithGoogle,
       }}
     >
