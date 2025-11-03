@@ -21,7 +21,7 @@ export default function SignupPage() {
       </div>
       <div className="relative hidden bg-black lg:block">
         <img
-          src={"/src/assets/vertical_logo_white.svg"}
+          src={"/public/assets/vertical_logo_white.svg"}
           alt="Vertiq Logo"
           className="absolute inset-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 object-contain p-0 dark:brightness-[0.9]"
         />
