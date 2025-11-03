@@ -7,7 +7,7 @@ import type {
   ErrorResponse
 } from "@/types";
 
-const BASE_URL = 'http://localhost:8080/auth/v1';
+const BASE_URL = 'https://api-gateway-7hr4.onrender.com/auth/v1';
 
 interface SignupResponse {
   message: string;

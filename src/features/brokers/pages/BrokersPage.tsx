@@ -101,7 +101,7 @@ const BrokersPage: React.FC = () => {
           }
           try {
             const userId = getUserId(user);
-            await fetch(`http://localhost:8080/broker-integration/v1/${brokerId}/callback`, {
+            await fetch(`https://api-gateway-7hr4.onrender.com/broker-integration/v1/${brokerId}/callback`, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

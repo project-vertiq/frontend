@@ -3,7 +3,7 @@
 
 import { fetchWithAuthRetry } from "./fetchWithAuthRetry.js";
 
-const BASE_URL = 'http://localhost:8080/broker-integration/v1';
+const BASE_URL = 'https://api-gateway-7hr4.onrender.com/broker-integration/v1';
 
 export interface BrokerSummary {
   brokerId: string;
