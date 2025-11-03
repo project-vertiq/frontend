@@ -13,11 +13,11 @@ import {
 } from "@/services/broker.api";
 import { Skeleton } from '@/components/ui/skeleton';
 import type { BrokerSummary } from '@/services/broker.api';
-import upstoxLogo from '@/assets/upstox_only_logo.jpeg';
-import zerodhaLogo from '@/assets/zerodha_only_logo.jpeg';
-import growwLogo from '@/assets/groww_only_logo.png';
-import angelOneLogo from '@/assets/angelone_only_logo.jpeg';
-import genericLogo from '@/assets/only_logo_black.svg';
+import upstoxLogo from '/assets/upstox_only_logo.jpeg';
+import zerodhaLogo from '/assets/zerodha_only_logo.jpeg';
+import growwLogo from '/assets/groww_only_logo.png';
+import angelOneLogo from '/assets/angelone_only_logo.jpeg';
+import genericLogo from '/assets/only_logo_black.svg';
 
 const brokerTabs = [
   { label: "All", value: "all" },

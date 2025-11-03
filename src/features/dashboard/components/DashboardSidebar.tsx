@@ -1,4 +1,4 @@
-import onlyLogoWhite from "@/assets/only_logo_white.svg";
+import onlyLogoWhite from "/assets/only_logo_white.svg";
 import { Sidebar, SidebarContent, SidebarHeader, SidebarRail, SidebarMenu, SidebarMenuItem, SidebarMenuButton, SidebarGroup, SidebarGroupLabel } from "@/components/ui/sidebar";
 import { NavMain } from "@/components/nav-main";
 import { Frame, PieChart, SquareTerminal, Wallet, Users, Settings } from "lucide-react";
